@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+               <a href="index.html"><h1>BUB-IT</h1></a> 
+            </div>
+            <div class="btns">
+                <a href="#"><button type="submit" class="login">Log in</button></a>
+                <div class="signup">
+                    <a href="signup.html"><button type="submit" class="sign">Sign up</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btns-mobile">
+            <a href="#"><button type="submit" class="login">Log in</button></a>
+            <div class="signup">
+                <a href="signup.html"><button type="submit" class="sign">Sign up</button></a>
+            </div>
+        </div>
+
+        <div class="form">
+            <form  method="post" name="loginForm" id="loginForm">
+                <div class="form-detail">
+                    <div class="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="formdetail">
+                    <div class="psw">
+                        <label for="password">Password</label>
+                    </div>
+                    <input type="password" name="password" id="password" placeholder="Input your Password" required>
+                </div>
+
+                <div class="btns">
+                    <a href="#"><button type="submit" class="log">Log In</button></a>
+                </div>
+
+                <div class="sign">
+                    <h2>You don't have account? Create one <a href="signup.html"><button type="submit" class="signup">Sign Up</button></a></h2>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./login.js"></script>
+    
+</body>
+</html>
