@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Bub Homepage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-mobile">
+            <div class="logo">
+                <h1>Bub-It</h1>
+            </div>
+            <!-- MOBILE BUTTONS -->
+            <i class="bi bi-list"></i>
+            <!-- WEB BUTTONS -->
+            <div class="nav-web">
+                <div class="btns-web">
+                    <a href="login.html"><button type="submit" class="login">Log in</button></a>
+                    <div class="signup">
+                        <a href="signup.html"><button type="submit" class="sign">Sign up</button></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+            <div class="btns-mobile">
+                <a href="login.html"><button type="submit" class="login">Log in</button></a>
+                <div class="signup">
+                    <a href="signup.html"><button type="submit" class="sign">Sign up</button></a>
+                </div>
+            </div>
+
+            
+<!-- MAIN SECTION -->
+        <div class="hero">    
+                <img src="image/mobile-pic1.png" alt="" class="mobile-pic">
+                <div class="form"id="urlForm" >
+                    <div class="enter">
+                        <form method="post" name="urlForm" id="urlForm" >
+                            <h2><i class="bi bi-link-45deg" id="first"></i><i class="bi bi-link-45deg" id="second"></i>Enter your long URL here</h2>
+                            <input class="ent" type="text" name="longUrl" id="longUrl"> 
+                        </form>
+                    </div>                        
+                    <div class="customize">
+                        <h2 class="custom"><i class="bi bi-link-45deg" id="first"></i>Customize your link</h2>
+                        <div class="double-input">
+                        <input class="cust" type="text" placeholder="bub.junyong.me">
+                        <button type="submit" class="cust1">alias</button>
+                        </div>
+                    </div>
+                    <div class="bub-it">
+                        <div class="url">
+                            <a href="#">My URL</a>
+                        </div>
+                        <div class="bub">
+                            <button class="bubit" type="submit" onclick="openPopup()" >Bub it</button>
+                            <div class="popup" id="popup">
+                                <div class="popup-details">
+                                    <div class="popup-text">
+                                        <h2>Your Shortened URL:</h2>
+                                    </div>
+                                    <div class="popup-input">
+                                        <input type="text" class="p-input" id="popup-in" placeholder="your shortened url">
+                                        <button type="button" class="copy"><i class="bi bi-clipboard"></i>copy</button>
+                                    </div>
+                                    <div class="popup-btns">
+                                        <div class="popup-url">
+                                            <a href="#">My URL</a>
+                                        </div>
+                                        <div class="popup-stats">
+                                           <a href="stats.html"><button class="stats" type="submit">Detailed stats</button></a> 
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="icons">
+                                        <i class="bi bi-x" onclick="closePopup()"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="image/desktop-pic.png" alt="Image" class="web-pic">
+                </div>
+                
+            
+
+           
+
+        </div>
+
+
+    </div>  
+    <script src="./home.js"></script>
+</body>
+</html>

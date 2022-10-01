@@ -1,0 +1,538 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: 'tloz';
+    src: url(font/TLOZ-Minish.ttf);
+}
+
+/* hidden content start */
+.hero .img img {
+    display: none;
+}
+.nav-web {
+    display: none;
+}
+
+/* hidden content stop */
+body {
+    /* background-color: blue; */
+    background-image: url(image/mobile-bg2.png);
+    background-size: cover;
+}
+.container{
+    /* background-image: url(image/mobile-bg2.png);
+    background-size: cover; */
+    width: 100%;
+    height: 100vh;
+}
+/* nav mobile start */
+.nav-mobile {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin: 8vh 10vw;
+    margin-bottom: 0;
+}
+.nav-mobile h1 {
+    font-family: 'tloz';
+    font-size: 25px;
+    /* margin-top: 0.5vh; */
+}
+
+.nav-mobile .bi {
+    font-size: 40px;
+    color: rgb(96, 68, 27);
+    cursor: pointer;
+}
+
+/* nav mobile stop */
+
+/* mobile button start */
+
+.btns-mobile {
+    /* real backgroung */
+    /* background-color: #FFFCFA; */
+    background-color: #dabfa1;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 40px 0 0;
+    /* border-right: 2px solid rgb(54, 36, 13);
+    border-width: 5px; */
+    box-shadow: 0px 0px 10px 0px;
+    left: -100%;
+    transition: all .5s;
+
+}
+
+.btns-mobile .login {
+    margin-bottom: 0.5vh;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 15vw;
+    transition: all .5s;
+    color: rgb(54, 36, 13);
+    background-color: #FFFCFA;
+} 
+.btns-mobile .login:hover {
+    background-color: rgb(54, 36, 13);
+    color: #dabfa1;
+    cursor: pointer;
+}
+.btns-mobile .sign {
+    background-color: #FFFCFA;
+    margin-top: 0.5vh;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 20vw;
+    color: rgb(54, 36, 13);
+    cursor: pointer;
+}
+.btns-mobile .sign:hover {
+    background-color: rgb(54, 36, 13);
+    color: #dabfa1;
+    cursor: pointer;
+}
+.btns-mobile.active {
+    left: 0;
+}
+
+/* main section */
+.hero {
+    /* background-color: aqua; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18vh;
+    width: 100%;
+}
+.hero img {
+    width: 42vw;
+    margin-right: 2rem;
+
+}
+.hero .form {
+    background-color: rgb(255, 255, 255);
+    /* background-color: blue; */
+    width: 70vw;
+    height: 45vh;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 0.2px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.form h2 {
+    font-size: 16px;
+}
+.form #second {
+    margin-right: 2vw;
+}
+/* .form #first {
+
+} */
+
+.form input {
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 50vw;
+    height: 5vh;
+    border: 1px solid black;
+}
+
+.enter {
+    /* background-color: chartreuse; */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.enter h2{
+    font-size: 2rem;
+}
+.customize h2 {
+    /* background-color: crimson; */
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.customize .double-input {
+    display: inline-flex;
+}
+.double-input input {
+    font-size: 12px;
+    text-align: center;
+    
+}
+.customize .double-input .cust {
+    width: 40vw;
+}
+.customize .double-input .cust1 {
+    margin-top: .8rem;
+    width: 15vw;
+    height: 2rem;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: #FFFCFA;
+    
+}
+
+.customize .double-input .cust1:hover{
+    background-color: rgb(63, 43, 18);
+    color: #FFFCFA;
+}
+
+.form .bub-it {
+    /* background-color: aqua; */
+    display: inline-flex;
+    width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bub-it button {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgb(63, 43, 18);
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.bub-it button:hover{
+    color: burlywood;
+}
+
+.bub-it a {
+    color: black;
+    cursor: pointer;
+    margin-left: 1.9rem;
+}
+.bub-it a:hover{
+    color:rgb(96, 68, 27);
+}
+
+/*****************************Popup*******************************/
+.popup{
+    width: 33rem;
+    background-color: #dabfa1;
+    opacity: 1;
+    height: 23rem;
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.1);
+    visibility: hidden;
+    transition: transform .4s, top .4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 60%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.popup-text h2{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.popup-input .p-input{
+    width: 19rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    height: 3rem;
+}
+.popup-input .p-input::placeholder{
+    padding: 6px;
+}
+.popup-input .copy i{
+    width: 2rem;
+    height: 1rem;
+}
+.popup-input .copy{
+    margin-left: 0;
+    width: 8rem;
+    height: 3rem;
+}
+.popup-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    margin-left: -1rem;
+}
+
+.popup-btns a .popup-url{
+    
+    width: 8rem;
+    height: 3rem;
+}
+
+.popup-btns .stats{
+    width: 9.5rem;
+    font-size: 1rem;
+    margin-top: -1rem;
+    margin-left: 8rem;
+    height: 3rem;
+    background: #FFFCFA;
+    color: black;
+}
+.popup-details .icons{
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: cornsilk;
+}
+
+
+/* web view */
+@media screen and (min-width: 924px) {
+    body {
+        background-image: url(image/desktop-bg2.png);
+      }
+
+    /* hidden content start */
+
+    .hero .mobile-pic {
+        display: none;
+    }
+    
+    .btns-mobile {
+        display: none;
+    }
+    /* hidden content stop */
+
+    /* nav start */
+    .nav-mobile {
+        align-items: center;
+    }
+    .nav-mobile i {
+        display: none;
+    }
+    .nav-mobile h1 {
+        font-size: 30px;
+    }
+    .btns-web {
+        display: inline-flex;
+    }
+    .btns-web button {
+        font-size: 15px;
+        border-radius: 10px;
+        width: 10vw;
+        height: 5vh;
+    }
+    .btns-web .login {
+        border: none;
+        background-color: #FFFCFA;
+    }
+    .btns-web .login:hover {
+        border: none;
+        background-color: rgb(63, 43, 18);
+        color: #FFFCFA;
+        cursor: pointer;
+        transition: all .5s;  
+    }
+    .btns-web .sign {
+        border: none;
+        background-color: #FFFCFA;
+        cursor: pointer;
+    }
+    .btns-web .sign:hover {
+        border: none;
+        background-color: rgb(63, 43, 18);
+        color: #FFFCFA;
+        cursor: pointer;
+        transition: all .5s; 
+    }
+
+    /* nav stop */
+    .hero {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .hero .form {
+        width: 40vw;
+        height: 55vh;
+        box-shadow: 0 0 3px 0.2px;
+    }
+    .hero .img img {
+        display: block;
+    }
+
+    .hero .web-pic {
+        height: 65vh;
+        margin-left: 5px;
+    }
+    .nav-web {
+        display: block;
+    }
+
+    .form input {
+        width: 30vw;
+        height: 10vh;
+    }
+    .customize .double-input .cust {
+        width: 25vw;
+    }
+    .customize .double-input .cust1 {
+        width: 5vw;
+        height: 4rem;
+    }
+
+
+    /* bub it */
+    .form .bub-it {
+        /* background-color: aqua; */
+        display: inline-flex;
+        width: 35vw;
+    }
+    
+    .bub-it button {
+        width: 20vw;
+        height: 10vh;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    
+    .bub-it a {
+        color: black;
+    } 
+    
+    /************Popoup************/
+    
+}
+
+@media screen and (max-width: 700px){
+    button .cust1{
+        height: 2rem;
+    }
+    .popup{
+        width: 25rem;
+        background-color: #dabfa1;
+        opacity: 1;
+        height: 23rem;
+        border-radius: 3rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.1);
+        visibility: hidden;
+        transition: transform .4s, top .4s;
+    }
+    .open-popup{
+        visibility: visible;
+        top: 60%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .popup-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    
+    .popup-text h2{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .popup-input .p-input{
+        width: 15rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        margin-left: .5rem;
+        height: 3rem;
+    }
+    .popup-input .p-input::placeholder{
+        padding: 6px;
+    }
+    .popup-input .copy i{
+        width: 2rem;
+        height: 1rem;
+        font-size: .9rem;
+    }
+    .popup-input .copy{
+        margin-left: 0;
+        width: 5rem;
+        height: 3rem;
+        font-size: .9rem;
+    }
+    .popup-btns{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3.5rem;
+        margin-left: -1rem;
+    }
+    
+    .popup-btns a .popup-url{
+        
+        width: 8rem;
+        height: 3rem;
+    }
+    
+    .popup-btns .stats{
+        width: 9.5rem;
+        font-size: 1rem;
+        margin-top: -1rem;
+        margin-left: 8rem;
+        height: 3rem;
+        background: #FFFCFA;
+        color: black;
+    }
+    .hero .form{
+        height: 25rem;
+    }
+    .enter{
+        align-items: center;
+    }
+    .enter h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .enter input{
+        margin-left: 2rem;
+    }
+    
+    .customize{
+        align-items: center;
+    }
+    .customize h2{
+        font-size: 1.5rem;
+    }
+}
+
+
